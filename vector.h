@@ -4,6 +4,8 @@
 // (GPLv2). See https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
 // Author: Stephen E. MacKenzie
 //===----------------------------------------------------------------------===//
+// @TODO [3/2020]  This needs to be updated.  Get rid of the gnu _Requires
+// @TODO [3/2020]  Make ctors noexcept when appropriate.
 #pragma once
 #include "iterator.h"
 #include <algorithm>
