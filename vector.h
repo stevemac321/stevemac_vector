@@ -439,24 +439,26 @@ template <typename T, class Allocator = std::allocator<T>> class vector
 
 	reference front()
 	{
-		assert(_size > 0);
-		return _begin[0];
+                         return _begin[0];
 	}
 	const_reference front() const
 	{
-		assert(_size > 0);
-		return _begin[0];
+                        return _begin[0];
 	}
 
 	reference back()
 	{
-		assert(_size > 0);
-		return _begin[_size - 1];
+		if(_size > 0)
+                        return  _begin[_size - 1];
+                else
+                        return _begin[0];
 	}
 	const_reference back() const
 	{
-		assert(_size > 0);
-		return _begin[_size - 1];
+		if(_size > 0)
+                       return _begin[_size - 1];
+                else
+                       return  _begin[0];
 	}
 	//===----------------------------------------------------------------------===//
 	/// 23.3.6.4, data access
